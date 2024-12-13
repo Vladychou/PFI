@@ -1,0 +1,120 @@
+/*----------------------------------------------------------------------------*/
+/*MAIN KB2PLUS*/
+#mainKb2 {
+    grid-area: mn;
+    display:grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: max-content;
+    padding: 1em;
+    gap: 1em;
+    background-color: #e0e1dd;
+}
+#mainKb2 > div {
+    background-color: #f1f1f1;
+    border-radius: 1em;
+    padding: 0.5em;
+    margin-bottom: 2em;
+    box-shadow: 4px 4px 4px 4px rgba(0,0,0,0.2);
+}
+#div1 ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+#div1 li a {
+    display: block;
+    color: black;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+#div1 li a:hover:not(.active) {
+    background-color: #555;
+    color: white;
+}
+#dropdown {
+    position: relative;
+    display: inline-block;
+    border-radius: 1em;
+    margin: 2em 0em;
+    
+}
+#dropbtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 1em;
+    margin-left: 2em;
+    font-size: 1em;
+    border: 2px solid black;
+    cursor: pointer;
+}
+#dropContent {
+    display: none;
+    position:absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+#dropContent a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+#dropContent a:hover {
+    background-color: #f1f1f1
+}
+
+#dropdown:hover #dropContent {
+    display: block;
+}
+#div3 > div {
+    display: inline-block;
+    padding: 1em;
+    margin: 2em;
+    text-align: center;
+    border: 1px solid black;
+    background-color: #4CAF50;
+}
+#div3 > div:hover {
+    box-shadow: 2px 2px 2px 2px rgba(0,0,0,0.2);
+}
+#div4 > div {
+    padding: 1em;
+    margin: 2em;
+    font-size: large;
+    text-align: center;
+}
+.tooltips .tooltipsText {
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 0.25em 0;
+    position: absolute;
+    bottom: -14%;
+    left: 9%;
+    opacity: 0;
+    transition: all ease-in-out 1s;
+}
+.tooltips:hover .tooltipsText {
+    opacity: 1;
+    transition: all ease-in-out 1s;
+}
+/*----------------------------------------------------------------------------*/
+
+@media screen and (width < 770px) {
+    #mainKb2 {
+        grid-area: mn;
+        display:grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: max-content;
+        padding: 1em;
+        gap: 1em;
+        background-color: #e0e1dd;
+    }
+    #div5 > div:first-child {
+        padding: 2em;
+    }
+}

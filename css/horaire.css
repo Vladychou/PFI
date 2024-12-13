@@ -1,0 +1,66 @@
+/*----------------------------------------------------------------------------*/
+/*MAIN HORAIRE*/
+.mainHoraire {
+    grid-area: mn;
+    width: 100%;
+    display: flex;
+    flex-flow: column;
+}
+.divHoraire{
+    display: grid;
+    grid-template-columns: 5% 95%;
+}
+.case div {
+    padding: 0.25em;
+    border: 1px solid black;
+    align-items: stretch;
+    width: 20%;
+    transition: all ease-in-out 0.5s;
+}
+.case {
+    display: flex;
+    flex-direction: row;
+}
+.plage {
+    border: 1px solid black;
+    text-align: center;
+}
+.prog {
+    background-color: #40916c;
+}
+.mat {
+    background-color: #335c67;
+}
+.philo {
+    background-color: #fed9b7;
+}
+.frc {
+    background-color: #0081a7;
+}
+.expo {
+    background-color: #ff7f51;
+}
+.web {
+    background-color: #9e2a2b;
+}
+.case > div:hover {
+    opacity: 0.5;
+    transition: all ease-in-out 0.3s;
+}
+.divCours {
+    display: flex;
+    flex-flow: row wrap;
+    padding-top: 1em;
+}
+.divCours > div {
+    width: 50%;
+    text-align: center;
+    box-shadow: -1em -8px 16px 0px rgba(0,0,0,0.2);
+}
+.divCours img {
+    object-fit :cover;
+    border-radius: 1em;
+    box-shadow: 2px 2px 2px 2px rgba(0,0,0,0.2);
+    margin-top: 2em;
+}
+/*----------------------------------------------------------------------------*/

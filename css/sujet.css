@@ -1,0 +1,53 @@
+/*----------------------------------------------------------------------------*/
+/*MAIN SUJET*/
+.mainSujet {
+    grid-area: mn;
+    background-color: #f1f1f1;
+    display: flex;
+    flex-flow: row wrap;
+    padding-top: 1em;
+}
+.mainSujet h2 {
+    width: 100%;
+}
+.photoSoccer {
+    text-align: center;
+    width: 25em;
+    border: 2px solid black;
+    margin: 0.5em 2em 0.5em 4em;
+    box-shadow: 2px 2px 2px 2px rgba(0,0,0,0.2);
+}
+.textSoccer {
+    width: 35em;
+    padding-top: 0.5em;
+    margin: 0.5em;
+    background-color: #e0e1dd;
+    border-radius: 0.5em;
+    box-shadow: 2px 2px 2px 2px rgba(0,0,0,0.2);
+}
+/*----------------------------------------------------------------------------*/
+
+@media screen and (width < 1100px) {
+    .photoSoccer {
+        width: 20em;
+    }
+    .textSoccer {
+        width: 25em;
+    }
+}
+
+@media screen and (width < 890px) {
+    .photoSoccer {
+        text-align: center;
+    }
+    .textSoccer {
+        width: 20em;
+    }
+}
+
+@media screen and (width < 700px) {
+    .textSoccer {
+        width: 15em;
+        margin: 0.5em 2em 0.5em 4em;
+    }
+}

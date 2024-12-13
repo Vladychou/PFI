@@ -1,0 +1,55 @@
+#mainProf {
+    grid-area: mn;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: max-content;
+    text-align: center;
+    margin: 1.5em 1em;
+
+}
+#mainProf > div {
+    background-color: #b3b2b2;
+    box-shadow: -1em 8px 16px 0px rgba(0,0,0,0.2);
+    border-radius: 0.25em;
+    text-align: center;
+}
+#mainProf > div:nth-child(odd){
+    background-color: #1b7a92;
+}
+img {
+    object-fit :cover;
+    border-radius: 1em;
+    box-shadow: 2px 2px 2px 2px rgba(0,0,0,0.2);
+    margin-top: 1em;
+}
+.textProf {
+    text-align: left;
+    padding: 0.25em ;
+    margin: 0.5em;
+    background-color: #e0e1dd;
+    border-radius: 0.25em;
+}
+
+@media screen and (width < 1285px) {
+    #mainProf {
+        grid-area: mn;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: max-content;
+        text-align: center;
+        margin: 1.5em 1em;
+    
+    }
+}
+
+@media screen and (width < 724px) {
+    #mainProf {
+        grid-area: mn;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: max-content;
+        text-align: center;
+        margin: 1.5em 1em;
+    
+    }
+}

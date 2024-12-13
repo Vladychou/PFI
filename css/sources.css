@@ -1,0 +1,18 @@
+.mainSources {
+    grid-area: mn;
+    display: flex;
+    flex-flow: row wrap;
+    width: 100%;
+    justify-content: space-around;
+}
+.mainSources img {
+    object-fit: cover;
+    border-radius: 1em;
+    padding: 0.25em;
+}
+.mainSources > div{
+    padding: 1em;
+    display: flex;
+    flex-flow: column;
+    text-align: center;
+}
