@@ -9,6 +9,8 @@
     object-fit: cover;
     border-radius: 1em;
     padding: 0.25em;
+    width: 250px;
+    height: 175px;
 }
 .mainSources > div{
     padding: 1em;

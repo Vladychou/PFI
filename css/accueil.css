@@ -25,7 +25,9 @@
 }
 .background img {
     border: 2px solid black;
-    border-radius: 1em;  
+    border-radius: 1em; 
+    width: 15em;
+    height: 20em;
 }
 .textIframe {
     width: 100%;
